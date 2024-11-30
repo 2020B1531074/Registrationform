@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Register Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>My Form</div>
+        <form action="RegisterServlet" method="post">
+            <table>
+                <tr>
+                    <td>Enter your Name:</td>
+                    <td>
+                        <input type="text" name="user_name" placeholder="Enter Here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter your Password:</td>
+                    <td>
+                        <input type="password" name="user_password" placeholder="Enter Here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter your Email:</td>
+                    <td>
+                        <input type="email" name="user_email" placeholder="Enter Here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select your Gender:</td>
+                    <td>
+                        <input type="radio" name="user_gender" value="Male" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="user_gender" value="Female" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="terms_conditions" id="terms" required>
+                        <label for="terms">I agree to the terms and conditions</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
